@@ -12,13 +12,15 @@ function printObj() {
 
 const strin = printObj();
 
-function printS() {console.log(strin);}
+function printS() {
+  console.log(strin);
+}
 
 function ofc(param = 1) {
   console.log(param * 16);
-  console.log("OK");
+  return "OK";
 }
-
+const stri = ofc();
 printObj();
 printS();
 ofc();
@@ -26,3 +28,5 @@ ofc(2);
 ofc(3);
 ofc(4);
 ofc(5);
+
+console.log(`All files ${stri}`)
